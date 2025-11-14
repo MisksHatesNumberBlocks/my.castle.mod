@@ -1,3 +1,4 @@
+-- wow just changed some thingys :D
 local function evalActorRef(actorRef, sourceActorId, game, context)
    local targetActorId
    if actorRef.kind == "self" then
@@ -13,7 +14,7 @@ end
 Common:defineExpression(
    "behavior property", {
       returnType = "number",
-      description = "the value of a behavior property",
+      description = "the value of an actor's property",
       order = 4,
       paramSpecs = {
          behaviorId = {
@@ -63,7 +64,7 @@ Common:defineExpression(
 Common:defineExpression(
    "counter value", {
       returnType = "number",
-      description = "the value of a counter",
+      description = "my counter value",
       order = 3,
       paramSpecs = {
          actorRef = {
@@ -121,7 +122,7 @@ Common:defineExpression(
 Common:defineExpression(
    "actor angle", {
       returnType = "number",
-      description = "the angle from one actor to another (degrees)",
+      description = "the angle of an actor to another (degrees)",
       category = "spatial relationships",
       paramSpecs = {
          fromActor= {
@@ -155,7 +156,7 @@ Common:defineExpression(
 Common:defineExpression(
    "angle of motion", {
       returnType = "number",
-      description = "the angle of motion of an actor",
+      description = "angle of motion of an actor",
       category = "spatial relationships",
       paramSpecs = {
          actorRef = {
