@@ -1,7 +1,7 @@
 Common:defineExpression(
    "random", {
       returnType = "number",
-      description = "a random number in a range",
+      description = "a random number from minimum to maximum range",
       order = 1,
       category = "randomness",
       paramSpecs = {
@@ -38,7 +38,7 @@ Common:defineExpression(
 Common:defineExpression(
    "perlin", {
       returnType = "number",
-      description = "Perlin noise in 2 dimensions",
+      description = "Perlin noise at X and Y",
       category = "randomness",
       paramSpecs = {
          x = {
@@ -64,7 +64,7 @@ Common:defineExpression(
 Common:defineExpression(
    "gauss", {
       returnType = "number",
-      description = "a random number with a Gaussian distribution",
+      description = "choose random number with a Gaussian distribution",
       category = "randomness",
       paramSpecs = {
          mean = {
