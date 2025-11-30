@@ -1,2 +1,2 @@
 # Castle Ultra
-Idk 🫤
+Idk :/
