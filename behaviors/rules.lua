@@ -221,7 +221,7 @@ end
 -- Variables triggers
 
 RulesBehavior.triggers["variable reaches value"] = {
-    description = "When a variable reaches a value",
+    description = "When a variable meets a condition",
     category = "state",
     paramSpecs = {
        variableId = {
@@ -247,6 +247,32 @@ RulesBehavior.triggers["variable reaches value"] = {
        },
     },
 }
+
+RulesBehavior.triggers["expression meets condition"] = {
+    description = "When an expression meets a condition",
+    category = "state",
+    paramSpecs = {
+       value = {
+          label = "value",
+          method = "numberInput",
+          initialValue = 0,
+       },
+       comparison = {
+          label = "comparison",
+          method = "dropdown",
+          initialValue = "equal",
+          props = {
+             items = COMPARISON_OPERATORS,
+          },
+       },
+       value = {
+          label = "value",
+          method = "numberInput",
+          initialValue = 0,
+       },
+    },
+}
+
 
 RulesBehavior.triggers["variable changes"] = {
     description = "When a variable changes",
