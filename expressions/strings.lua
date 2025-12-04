@@ -74,7 +74,7 @@ Expression.expressions["string"] = {
       },
    },
    eval = function(game, expression, actorId, context)
-      return game:variableIdToValue(expression.params.variableId)
+      return expression.params.value
    end
 }
 
